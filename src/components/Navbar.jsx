@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav 
-    className = {`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+    className = {`${styles.paddingX} w-full flex items-center py-5 top-0 z-20`}>
       <div className = "w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link to="/"
         className="flex items-center gap-2"
@@ -19,12 +19,11 @@ const Navbar = () => {
           setActive("");
           window.scrollTo(0, 0);
         }}>
-          <img src = {logo} alt = "logo" className = "w-10 h-10" />
-          <p className = "text-white text-[18px] font-bold cursor-pointer">
-            <span className="text-blue-400">Peter</span>
-            <span className="text-blue-200">Z</span>
-            <span className="text-purple-500">.</span>
-            dev
+          {/* <img src = {logo} alt = "logo" className = "w-10 h-10 drop-shadow-space-glow" /> */}
+          <p className = "text-white text-[28px] font-bold cursor-pointer">
+            <span className="text-[#A0E7FF]">Peter</span>
+            <span className="text-white-200">Z</span>
+            <span className="text-[#A0E7FF]">.dev</span>
           </p>
         </Link>
       
