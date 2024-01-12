@@ -53,9 +53,11 @@ import tripguide from "./tripguide.png";
 import soragl from "./soragl.jpeg";
 import pomoriseProject from "./pomorise-project.png";
 import qiskitFallfest from "./qiskit-fallfest.png";
+import htn2022 from "./htn2022.png";
+import htn2023 from "./htn2023.png";
 
 export {
-  soragl, pomoriseProject, qiskitFallfest,
+  soragl, pomoriseProject, qiskitFallfest, htn2022, htn2023,
   qiskit, homebrew, python, pygame, cpp, godot, java, opengl,
   pomorise,
   youtube,

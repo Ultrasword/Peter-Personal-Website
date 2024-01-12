@@ -40,7 +40,9 @@ import {
   opengl,
   soragl,
   pomoriseProject,
-  qiskitFallfest
+  qiskitFallfest,
+  htn2022,
+  htn2023
 } from "../assets";
 
 export const navLinks = [
@@ -319,29 +321,33 @@ const projects = [
         color: "pink-text-gradient",
       }
     ],
-    image: qiskitFallfest,
+    image: htn2023,
     source_code_link: "https://github.com/petthepotat-dump/htn-hack-2023-24",
   },
   {
     name: "HackTheNorth 2023 - brAInstorm",
     description:
-      "A OpenCV based hands free Computer interface for the physically impaired. Used google mediapipe for hand/gesture tracking and adhawk glasses for monitor tracking.",
+      "A BCI to convolutionary neural network interface that collects EEG data from the user (via a Brain Computer interface) and uses it to train a CNN to visualize the user's thoughts through abstract art.",
     tags: [
       {
-        name: "OpenCV",
+        name: "Convolutionary Neural Network",
         color: "blue-text-gradient",
       },
       {
-        name: "Python",
+        name: "Flask",
         color: "green-text-gradient",
       },
       {
-        name: "mediapipe",
+        name: "Python",
         color: "pink-text-gradient",
+      },
+      {
+        name: "Arduino and BCI",
+        color: "purple-text-gradient",
       }
     ],
-    image: qiskitFallfest,
-    source_code_link: "https://github.com/petthepotat-dump/htn-hack-2023-24",
+    image: htn2022,
+    source_code_link: "https://devpost.com/software/brainstorm-2qkdtw",
   }
 ];
 
