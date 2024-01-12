@@ -23,12 +23,14 @@ module.exports = {
         "hero-pattern": "url('/src/assets/herobg.png')",
         "hero-gradient": "linear-gradient(to top, #000000, #001F29)",
         "about-gradient": "linear-gradient(to bottom, #000000, #001F29)",
-        "experience-gradient": "linear-gradient(to bottom, #A87F5D, black, #081128)",
+        "experience-gradient": "linear-gradient(to bottom, #001F29, #081128)",
+        "tech-gradient": "linear-gradient(to bottom, #081128, #050C20)",
+        "projects-gradient": "linear-gradient(to bottom, #050C20, #000000)",
       },
       dropShadow: {
         "space-glow": "0px 0px 20px 200px #FFC44F",
         "card": "0px 10px 40px -15px #A0E7FF",
-      }
+      },
     },
   },
   plugins: [],

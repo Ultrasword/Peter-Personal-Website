@@ -1,4 +1,4 @@
-import {Suspense, useEffect, useState, React} from 'react'
+import {Suspense, useEffect, useState, React, useRef} from 'react'
 import {Canvas} from '@react-three/fiber'
 import {OrbitControls, Preload, useGLTF} from '@react-three/drei'
 
@@ -11,11 +11,16 @@ const Computers = ({ isMobile }) => {
   // const model = useGLTF('./desktop_pc/scene.gltf');
   const model = useGLTF('./blocks/blocks.gltf')
 
-  const meshRef = React.useRef();
+  const meshRef = useRef();
+  const aRef = useRef();
+  const bRef = useRef();
 
   useFrame( ({clock}) => {
     const a = clock.getElapsedTime();
-    meshRef.current.rotation.y = Math.sin(a);
+    meshRef.current.rotation.y = 0.1*Math.cos(a);
+    meshRef.current.position.y = 0.2*Math.sin(a);
+
+    meshRef.current.needsUpdate = true;
   })
 
   return (

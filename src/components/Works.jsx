@@ -68,22 +68,28 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
-          My Works
+          The Secret Sauce.
         </p>
         <h2 className={styles.sectionHeadText}>
-          Projects.
+          The Projects.
         </h2>
       </motion.div>
 
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px max-w-3xl leading-[30px]"
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Projects show case real world examples blah blah examples github link
-
+          Projects show case real world experience in the world not so far from the real world.
         </motion.p>
       </div>
+
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-3 text-white text-[17px] max-w-3xl leading-[30px]"
+        >
+          Enjoy your stay in the void...
+        </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
@@ -95,4 +101,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, "projects")
+export default SectionWrapper(Works, "projects", "bg-projects-gradient")

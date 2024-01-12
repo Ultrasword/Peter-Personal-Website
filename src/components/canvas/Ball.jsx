@@ -1,6 +1,8 @@
-import React, {Suspense} from 'react'
+import React, {Suspense, useRef} from 'react'
 import {Canvas} from '@react-three/fiber'
 import {Decal, Float, OrbitControls, Preload, useTexture} from '@react-three/drei'
+
+import {useFrame} from '@react-three/fiber'
 
 import CanvasLoader from '../Loader'
 
@@ -19,7 +21,7 @@ const Ball = (props) => {
           polygonOffsetFactor={-5}
           flatShading
         />
-        <Decal
+        <Decal 
           position={[0, 0, 1]}
           rotation={[2 * Math.PI, 0, 6.25]}
           map={decal}

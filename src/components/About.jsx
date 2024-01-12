@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, Link} from 'react'
 import {Tilt} from 'react-tilt'
 import {motion} from 'framer-motion'
 
@@ -8,26 +8,30 @@ import {fadeIn, textVariant } from '../utils/motion'
 
 import {SectionWrapper} from '../hoc'
 
-const ServiceCard = ({index, title, icon}) => {
+const ServiceCard = ({index, title, icon, link}) => {
   return (
-    <Tilt className="md:w-full lg:w-[40%] xs:w-full">
-      <motion.div 
-        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 p-[1px] rounded-[20px] shadow-card">
-        <div
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450}}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-        >
-          <img src={icon} alt={title} 
-            className="mb-10 h-100 object-contain rounded-[20px] shadow-card-image"></img>
-          <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+    <a href={link} className="md:w-full lg:w-[48%] xs:w-full">
+      {console.log(link)}
+      <Tilt>
+        <motion.div 
+          variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+          className="w-full bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 p-[1px] rounded-[20px] shadow-card">
+          <div
+            options={{
+              max: 45,
+              scale: 1,
+              speed: 450}}
+            className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          >
+            <img src={icon} alt={title} 
+              className="mb-10 h-100 object-contain rounded-[20px] shadow-card-image"></img>
+            <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
 
-        </div>
-      </motion.div>
-    </Tilt>
+          </div>
+        </motion.div>
+      </Tilt>
+    </a>
+    
   )
 }
 
@@ -47,7 +51,7 @@ const About = () => {
           &nbsp;and I love to <span className="text-white shadow-md shadow-amber-100 hover:shadow-amber-300">build things.</span>
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 items-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service}/>
         ))}

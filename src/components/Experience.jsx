@@ -19,7 +19,7 @@ const ExperienceCard = ({experience}) => {
         <img 
           src={experience.icon} 
           alt={experience.company_name} 
-          className="w-[60%] h-[60%] object-contain">
+          className="w-[80%] h-[80%] object-contain">
         </img>
       </div>
     }
@@ -60,7 +60,7 @@ const Experience = () => {
         </p>
 
         <h2 className={styles.sectionHeadText}>
-          Work Experience.
+          Big Projects & Experience.
         </h2>
 
       </motion.div>
@@ -76,4 +76,4 @@ const Experience = () => {
   )
 }
 
-export default SectionWrapper(Experience, "work", "experience-gradient")
+export default SectionWrapper(Experience, "work", "bg-experience-gradient")
