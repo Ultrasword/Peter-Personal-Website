@@ -39,7 +39,7 @@ const Navbar = () => {
                 () => setActive(link.title)
               }
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>
@@ -53,7 +53,7 @@ const Navbar = () => {
 
         </div>
 
-        <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-9 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+        <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-9 mx-4 my-2 min-w-[140px] z-20 rounded-xl`}>
           <ul className = "list-none flex ustify-end items-start flex-col gap-4">
             {navLinks.map((link) => (
               <li
@@ -68,7 +68,7 @@ const Navbar = () => {
                   }
                 }
               >
-                <a href={`#${link.id}`}>{link.title}</a>
+                <a href={`${link.id}`}>{link.title}</a>
               </li>
             ))}
           </ul>

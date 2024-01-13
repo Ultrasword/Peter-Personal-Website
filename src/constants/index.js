@@ -47,17 +47,21 @@ import {
 
 export const navLinks = [
   {
-    id: "about",
+    id: "#about",
     title: "About",
   },
   {
-    id: "work",
+    id: "#work",
     title: "Work",
   },
   {
-    id: "projects",
+    id: "#projects",
     title: "Projects",
   },
+  {
+    id: "https://drive.google.com/file/d/15G0AA47dS2IL1TfZoqsdPDfGWzCrJHVC/view?usp=sharing",
+    title: "Resume"
+  }
 ];
 
 const services = [
