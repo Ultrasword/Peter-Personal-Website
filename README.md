@@ -13,5 +13,6 @@ I used some relatively simple technologies:
 - TailwindCSS (it's pretty cool once you get the hang of it)
 - ThreeJS (the best)
 - Blender (to create models)
-- Vercel (to build + publish - because I'm broke and don't want to spend money on a domain just yet) 
+- Vercel (to build + publish - because I'm broke and don't want to spend money on a domain just yet)
 
+![Hero](hero)
