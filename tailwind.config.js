@@ -21,11 +21,12 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
-        "hero-gradient": "linear-gradient(to top, #000000, #001F29)",
+        "hero-gradient": "linear-gradient(to bottom, #001F29, #001F2950, #000000), url('/src/assets/background.jpeg')",
         "about-gradient": "linear-gradient(to bottom, #000000, #001F29)",
         "experience-gradient": "linear-gradient(to bottom, #001F29, #081128)",
         "tech-gradient": "linear-gradient(to bottom, #081128, #050C20)",
         "projects-gradient": "linear-gradient(to bottom, #050C20, #000000)",
+        "hero-back-back": "url('/src/assets/background.jpeg')",
       },
       dropShadow: {
         "space-glow": "0px 0px 20px 200px #FFC44F",

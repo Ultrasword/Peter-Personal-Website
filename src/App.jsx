@@ -5,10 +5,12 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, Stars
 const App = () => {
   return (
     <BrowserRouter>
-      <div className = "relative z-0 bg-primary">
-        <div className = "bg-hero-gradient bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
+      <div className = "relative z-[0] bg-primary">
+        <div className = "bg-hero-gradient bg-no-repeat bg-center">
+          <div className="z-[2]">
+            <Navbar />
+            <Hero />
+          </div>
         </div>
         <About />
         <Experience />
