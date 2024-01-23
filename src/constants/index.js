@@ -308,7 +308,7 @@ const projects = [
     source_code_link: "https://github.com/AkiraY1/QiskitFallFest2023/",
   },
   {
-    name: "HackTheNorth 2024 - MyEye",
+    name: "HackTheNorth 2023 - MyEye",
     description:
       "A OpenCV based hands free Computer interface for the physically impaired. Used google mediapipe for hand/gesture tracking and adhawk glasses for monitor tracking.",
     tags: [
@@ -329,7 +329,7 @@ const projects = [
     source_code_link: "https://github.com/petthepotat-dump/htn-hack-2023-24",
   },
   {
-    name: "HackTheNorth 2023 - brAInstorm",
+    name: "HackTheNorth 2022 - brAInstorm",
     description:
       "A BCI to convolutionary neural network interface that collects EEG data from the user (via a Brain Computer interface) and uses it to train a CNN to visualize the user's thoughts through abstract art.",
     tags: [
