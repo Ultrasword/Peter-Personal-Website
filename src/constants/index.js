@@ -291,7 +291,7 @@ const projects = [
     source_code_link: "https://github.com/pet-waterloo/ECE198-Pomorise",
   },
   {
-    name: "Qiskit Fallfest 202",
+    name: "Qiskit Fallfest 2024",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
