@@ -36,7 +36,7 @@ const Blocks = ({ isMobile }) => {
       <primitive
         object={model.scene}
         scale={isMobile ? 0.4 : 0.6}
-        position={isMobile ? [0, -1.5, -2.2] : [0, -3, 0]}
+        position={isMobile ? [0, -1.5, -2.2] : [-0.2, -3, 0]}
         rotation={[0.3, 1.6, -0.3]}
         >
       </primitive>

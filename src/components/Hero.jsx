@@ -13,7 +13,7 @@ const Hero = () => {
 
   useEffect(() => {
     const mediaQuery = window.matchMedia(
-      '(max-width: 500px)'
+      '(max-width: 200px)'
     );
 
     setIsMobile(mediaQuery.matches);
@@ -44,7 +44,7 @@ const Hero = () => {
             Hey! I'm <span className="text-[#A0E7FF]">Peter</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-           Welcome to the void... <br className="sm:block hidden"/> and my portfolio.
+           Welcome to the void... <br className="sm:block hidden"/> and my Portfolio Website!
           </p>
         </div>
       </div>

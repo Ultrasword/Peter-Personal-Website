@@ -10,17 +10,14 @@ import {SectionWrapper} from '../hoc'
 
 const ServiceCard = ({index, title, icon, link}) => {
   return (
-    <a href={link} className="md:w-full lg:w-[48%] xs:w-full">
+    <a href={link} className="lg:w-[48%] md:w-full xs:w-full">
       {console.log(link)}
-      <Tilt>
+      <Tilt glareEnable={true} tiltMaxAngleY={10} scale={0.5} glareColor={"#ffffff"} perspective={1000} transitionEasing={"cubic_bezier(0.03, 0.98, 0.52, 0.99)"}
+              transitionSpeed={10}>
         <motion.div 
           variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
           className="w-full bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 p-[1px] rounded-[20px] shadow-card">
           <div
-            options={{
-              max: 45,
-              scale: 1,
-              speed: 450}}
             className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
           >
             <img src={icon} alt={title} 
@@ -46,9 +43,7 @@ const About = () => {
       <motion.p 
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          I'm a student at 
-          &nbsp;<span className="text-white shadow-md shadow-amber-100 hover:shadow-amber-300">The University of Waterloo</span> 
-          &nbsp;and I love to <span className="text-white shadow-md shadow-amber-100 hover:shadow-amber-300">build things.</span>
+          I'm an <span className="text-white">18 year old</span> <span>self-taught programmer</span> studying Computer Engineering student at <span className="text-white">The University of Waterloo</span>. <span className="bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 inline-block text-transparent bg-clip-text">Here are some of my projects!</span>
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10 items-center">

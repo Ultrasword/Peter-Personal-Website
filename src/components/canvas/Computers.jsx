@@ -10,10 +10,7 @@ import CanvasLoader from '../Loader'
 const Computers = ({ isMobile }) => {
   // const model = useGLTF('./desktop_pc/scene.gltf');
   const model = useGLTF('./blocks/blocks.gltf')
-
   const meshRef = useRef();
-  const aRef = useRef();
-  const bRef = useRef();
 
   useFrame( ({clock}) => {
     const a = clock.getElapsedTime();
@@ -49,7 +46,7 @@ const Computers = ({ isMobile }) => {
       /> */}
       <primitive
         object={model.scene}
-        scale={isMobile ? 0.4 : 0.6}
+        scale={isMobile ? 0.3 : 0.6}
         position={isMobile ? [0, -1.5, -2.2] : [0, -2.5, 0]}
         rotation={[0.3, 1.6, -0.3]}
         >
