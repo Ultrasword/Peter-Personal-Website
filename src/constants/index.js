@@ -293,7 +293,7 @@ const projects = [
   {
     name: "Qiskit Fallfest 2024",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A Hackathon hosted at The University of Toronto by IBM and Qiskit. We won first place for our project!",
     tags: [
       {
         name: "Qiskit",
