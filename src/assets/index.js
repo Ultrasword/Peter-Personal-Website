@@ -17,6 +17,7 @@ import peterlogo from "./peter-logo.png";
 import petthepotat from "./petthepotat.jpeg";
 import pomorise from "./pomorise.png";
 import accnlogo from "./accn.png";
+import blackberry from "./blackberry.jpg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
