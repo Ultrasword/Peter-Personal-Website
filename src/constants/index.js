@@ -42,7 +42,8 @@ import {
   pomoriseProject,
   qiskitFallfest,
   htn2022,
-  htn2023
+  htn2023,
+  blackberry
 } from "../assets";
 
 export const navLinks = [
@@ -147,6 +148,29 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "Employee Management System",
+    company_name: "PeterZ.dev", 
+    icon: peterlogo,
+    iconBg: "#010606",
+    date: "Sept 2024",
+    points: [
+      "Developed a full-stack Employee Management System using Java and JSP for backend, PostgresQL for database, and React for front-end.",
+      "Implemented a user authentication system with JWT and Bcrypt for password hashing.",
+      "Designed a user-friendly interface with CRUD operations for employees, departments, and roles.",
+    ]
+  },
+  {
+    title: "Systems Software Developer",
+    company_name: "Blackberry",
+    icon: blackberry,
+    iconBg: "#000000",
+    date: "May 2024 - Aug 2024",
+    points: [
+      "Helped with updating a client customized application for Cryptographic Key & Certificate Management from outdated softwares to PostgreSQL backend and Java front-end using Vaadin 23 so the client has a centralized single-app interface.",
+      "Implemented a ”Batch Request” feature that interfaced with the application back-end to generate multiple certificates."
+    ]
+  },
   {
     title: "Personal Website",
     company_name: "PeterZ.dev",
