@@ -95,5 +95,6 @@ export {
   carrent,
   jobit,
   tripguide,
-  gamedev
+  gamedev,
+  blackberry
 };
